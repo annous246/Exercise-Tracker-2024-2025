@@ -58,6 +58,7 @@ app.post('/api/users',async(req,res)=>{
   .then((d)=>d)
   .catch(()=>console.log("error getting user from db"))
   
+  res.json({username:username,_id:user._id})
   
   
 })
